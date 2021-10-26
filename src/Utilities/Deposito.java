@@ -12,11 +12,11 @@ public class Deposito extends Pagamento {
     }
 
     public void exibirDadosDeposito(){
-        JOptionPane.showMessageDialog(null,"Codigo do Deposito: " + this.idDeposito +"\n" +
-                                                                    "Banco: "   + this.banco_pag          + "\n" +
-                                                                    "Conta: "   + this.conta_pag          + "\n" +
-                                                                    "Agencia: " + this.agencia_pag        + "\n" +
-                                                                    "Valor do Deposito: " + this.valor_pag + "\n"+
+        JOptionPane.showMessageDialog(null,"Codigo do Deposito: " + this.getIdDeposito() +"\n" +
+                                                                    "Banco: "   + this.getBanco_pag()          + "\n" +
+                                                                    "Conta: "   + this.getConta_pag()          + "\n" +
+                                                                    "Agencia: " + this.getAgencia_pag()        + "\n" +
+                                                                    "Valor do Deposito: " + this.getValor_pag() + "\n"+
                                                                     "Depositado em: " + this.getData_pag());
     }
     public String getIdDeposito() {
