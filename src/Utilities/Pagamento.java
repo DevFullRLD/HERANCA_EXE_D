@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Pagamento {
 
-    int valor_pag, parcelas_pag = 0;
-    String forma_pag, banco_pag, agencia_pag, conta_pag = "";
-    String data_pag;
+    private int valor_pag, parcelas_pag = 0;
+    private String forma_pag, banco_pag, agencia_pag, conta_pag = "";
+    private String data_pag;
 
 
     public int getValor_pag() {

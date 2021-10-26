@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.Date;
 
 public class Boleto extends Pagamento {
-    String codCliente, nomeCliente = "";
+    private String codCliente, nomeCliente = "";
 
     public Boleto(int valor_pag,String banco_pag,String agencia_pag,String conta_pag,  String data_pag, String codCliente, String nomeCliente, String forma_pag, int parcelas_pag) {
         super(valor_pag, banco_pag, agencia_pag, conta_pag, data_pag, forma_pag, parcelas_pag);

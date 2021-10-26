@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class Cheque extends Pagamento {
 
-    String financeira, nomeCliente, numero = "";
-    String dataAbertura;
+    private String financeira, nomeCliente, numero = "";
+    private String dataAbertura;
 
     public Cheque(int valor_pag, String banco_pag,String agencia_pag,String conta_pag , String financeira, String nomeCliente, String numero, String dataAbertura, Date data_pag, String forma_pag, int parcelas_pag) {
         super(valor_pag, banco_pag, agencia_pag, conta_pag, String.valueOf(data_pag), forma_pag, parcelas_pag);
