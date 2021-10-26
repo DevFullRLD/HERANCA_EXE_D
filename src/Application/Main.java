@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         int opera = Integer.parseInt(JOptionPane.showInputDialog("Digite a operação Escolhida: " + "\n"+
                                                                 "1 - Pagamento em Cheque" + "\n" +
                                                                 "2 - Pagamento via Boleto" + "\n" +
@@ -23,7 +23,7 @@ public class Main {
                 String numero     = JOptionPane.showInputDialog("Digite o numero do Talão de cheque:");
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do cheque"));
                 Date dataNF = new Date();
-                String dataAB = formatar.format(dataNF);
+                String dataAB = formato.format(dataNF);
                 Date datapg   = null;
                 String banco  = null;
                 String conta  = null;
@@ -49,7 +49,7 @@ public class Main {
                 String nome       = JOptionPane.showInputDialog("Digite seu nome do cliente: ");
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do cheque"));
                 Date dataNF = new Date();
-                String datapg = formatar.format(dataNF);
+                String datapg = formato.format(dataNF);
                 String banco  = null;
                 String conta  = null;
                 String agencia= null;
@@ -76,7 +76,7 @@ public class Main {
                 String agencia       = JOptionPane.showInputDialog("Digite a agencia: ");
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do deposito"));
                 Date dataNF = new Date();
-                String datapg = formatar.format(dataNF);
+                String datapg = formato.format(dataNF);
                 String forma_pag= null;
                 int parcelas_pag = 0;
                 Deposito deposito = new Deposito(valor, banco, agencia, conta, codigo, datapg, forma_pag, parcelas_pag);
@@ -102,7 +102,7 @@ public class Main {
                 String agencia       = JOptionPane.showInputDialog("Digite a agencia: ");
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do deposito"));
                 Date dataNF = new Date();
-                String datapg = formatar.format(dataNF);
+                String datapg = formato.format(dataNF);
                 String forma_pag= null;
                 int parcelas_pag = 0;
                 Tranferencia transferencia = new Tranferencia(valor, banco, agencia, conta, tipo, codigo, datapg, forma_pag, parcelas_pag);
