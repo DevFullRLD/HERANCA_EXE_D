@@ -24,8 +24,13 @@ public class Main {
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do cheque"));
                 Date dataNF = new Date();
                 String dataAB = formatar.format(dataNF);
-                Date datapg = null;
-                Cheque cheque = new Cheque(valor, financeira, nome, numero, dataAB, datapg);
+                Date datapg   = null;
+                String banco  = null;
+                String conta  = null;
+                String agencia= null;
+                String forma_pag= null;
+                int parcelas_pag = 0;
+                Cheque cheque = new Cheque(valor,banco, agencia, conta, financeira, nome, numero, dataAB, datapg, forma_pag, parcelas_pag );
                 //INSERINDO DADOS
 
                 cheque.setFinanceira(financeira);
@@ -45,7 +50,12 @@ public class Main {
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do cheque"));
                 Date dataNF = new Date();
                 String datapg = formatar.format(dataNF);
-                Boleto boleto = new Boleto(valor, datapg, codigo, nome );
+                String banco  = null;
+                String conta  = null;
+                String agencia= null;
+                String forma_pag= null;
+                int parcelas_pag = 0;
+                Boleto boleto = new Boleto(valor,banco, agencia, conta, datapg, codigo, nome, forma_pag, parcelas_pag );
                 //INSERINDO DADOS
 
                 boleto.setCodCliente(codigo);
@@ -67,7 +77,9 @@ public class Main {
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do deposito"));
                 Date dataNF = new Date();
                 String datapg = formatar.format(dataNF);
-                Deposito deposito = new Deposito(valor, banco, agencia, conta, codigo, datapg);
+                String forma_pag= null;
+                int parcelas_pag = 0;
+                Deposito deposito = new Deposito(valor, banco, agencia, conta, codigo, datapg, forma_pag, parcelas_pag);
 
                 //INSERINDO DADOS
                 deposito.setBanco_pag(banco);
@@ -91,7 +103,9 @@ public class Main {
                 int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do deposito"));
                 Date dataNF = new Date();
                 String datapg = formatar.format(dataNF);
-                Tranferencia transferencia = new Tranferencia(valor, banco, agencia, conta, tipo, codigo, datapg);
+                String forma_pag= null;
+                int parcelas_pag = 0;
+                Tranferencia transferencia = new Tranferencia(valor, banco, agencia, conta, tipo, codigo, datapg, forma_pag, parcelas_pag);
 
                 //INSERINDO DADOS
                 transferencia.setBanco_pag(banco);
