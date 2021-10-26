@@ -121,7 +121,7 @@ public class Main {
                 break;
             }
             default:{
-                JOptionPane.showMessageDialog(null,"Opção invalida, execute novamente");
+                JOptionPane.showMessageDialog(null,"Opção invalida, execute o programa novamente!");
                 break;
             }
         }
