@@ -51,11 +51,11 @@ public class Cheque extends Pagamento {
 
 
     public void exibirDadosCheque(){
-        JOptionPane.showMessageDialog(null,"Numero do cheque: "      + this.getNumero()       +"\n" +
-                                                                    "Nome da Financeira: "  + this.getFinanceira()  + "\n" +
-                                                                    "Nome do Cliente: "     + this.getNomeCliente() + "\n" +
-                                                                    "Data Inicio:  "         + this.getDataAbertura()+ "\n" +
-                                                                    "Valor : "              + this.getValor_pag() + "\n" );
+        JOptionPane.showMessageDialog(null,"Numero do cheque: "      + getNumero()       +"\n" +
+                                                                    "Nome da Financeira: "  + getFinanceira()  + "\n" +
+                                                                    "Nome do Cliente: "     + getNomeCliente() + "\n" +
+                                                                    "Data Inicio:  "         + getDataAbertura()+ "\n" +
+                                                                    "Valor : "              + getValor_pag() + "\n" );
     }
 
 }

@@ -13,10 +13,10 @@ public class Boleto extends Pagamento {
     }
 
     public void exibirDadosBoleto(){
-        JOptionPane.showMessageDialog(null,"Codigo de Cliente: "   + this.getCodCliente()   +"\n" +
-                                                                    "Nome do Cliente: "  + this.getNomeCliente()  + "\n" +
-                                                                    "Valor do Boleto: "  + this.getValor_pag()     + "\n" +
-                                                                    "Data de vencimento: " + this.getData_pag());
+        JOptionPane.showMessageDialog(null,"Codigo de Cliente: "   + getCodCliente()   +"\n" +
+                                                                    "Nome do Cliente: "  + getNomeCliente()  + "\n" +
+                                                                    "Valor do Boleto: "  + getValor_pag()     + "\n" +
+                                                                    "Data de vencimento: " + getData_pag());
     }
 
     public String getCodCliente() {
